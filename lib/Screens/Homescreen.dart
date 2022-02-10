@@ -1,3 +1,4 @@
+import 'package:chatapp/Pages/ChatPage.dart';
 import 'package:flutter/material.dart';
 
 class Homescreen extends StatefulWidget {
@@ -55,6 +56,7 @@ class _HomescreenState extends State<Homescreen>
         ],
         bottom: TabBar(
           controller: _controller,
+          indicatorColor: Colors.white,
           tabs: [
             Tab(icon: Icon(Icons.camera_alt)),
             Tab(text: "CHATS"),
@@ -67,7 +69,7 @@ class _HomescreenState extends State<Homescreen>
         controller: _controller,
         children: [
           Icon(Icons.camera_alt),
-          Icon(Icons.chat),
+          ChatPage(),
           Icon(Icons.chat),
           Icon(Icons.chat)
         ],
