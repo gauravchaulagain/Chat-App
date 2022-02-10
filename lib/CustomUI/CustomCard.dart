@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class CustomCard extends StatelessWidget {
   const CustomCard({Key? key}) : super(key: key);
@@ -8,8 +9,10 @@ class CustomCard extends StatelessWidget {
     return ListTile(
       leading: CircleAvatar(
         radius: 30,
-        backgroundColor: Colors.blue,
-        child: Text('A'),
+        child: SvgPicture.asset('assets/groups.svg', color: Colors.white,
+        height: 30,
+        width: 30,),
+        backgroundColor: Colors.blueGrey,
       ),
       title: Text('Gaurav',
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
