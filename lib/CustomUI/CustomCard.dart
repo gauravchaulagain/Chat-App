@@ -23,8 +23,8 @@ class CustomCard extends StatelessWidget {
               child: SvgPicture.asset(
                 chatModel.isGroup! ? 'assets/groups.svg' : 'assets/person.svg',
                 color: Colors.white,
-                height: 25,
-                width: 30,
+                height: 36,
+                width: 36,
               ),
               backgroundColor: Colors.blueGrey,
             ),
