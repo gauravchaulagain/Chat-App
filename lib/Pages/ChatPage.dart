@@ -38,7 +38,7 @@ class _ChatPageState extends State<ChatPage> {
           child: Icon(Icons.add),
         ),
         body: ListView.builder(
-            itemBuilder: chats.length,
+            itemCount: chats.length,
             itemBuilder: (context, index) => CustomCard(chatModel:chats[index])));
   }
 }
